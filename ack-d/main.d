@@ -18,6 +18,8 @@ int[] acks() {
 	foreach(i; parallel(input)) {
 		output[i] = ack(i, i + 1);
 	}
+
+	return output;
 }
 
 void main(string[] args) {
